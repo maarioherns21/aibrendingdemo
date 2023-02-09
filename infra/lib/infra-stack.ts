@@ -31,7 +31,8 @@ export class InfraStack extends cdk.Stack {
     });
 
     copyKittApi.root.addProxy({
-      defaultIntegration: new apiGateway.LambdaIntegration(apiLambda),
+      defaultIntegration: new apiGateway.LambdaIntegration(apiLambda)
+
     });
     // The code that defines your stack goes here
 
