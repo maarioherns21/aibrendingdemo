@@ -27,9 +27,10 @@ const Form: FC<Props> = ({
   };
 
   return (
-    <div>
+    <div className="mb-6 text-slate-400">
       <p>tell me what your bran is aboutt and i will genereate a copy</p>
       <input
+      className="p-2 w-full rounded-md focus:outline-teal-400 focus:outline text-slate-700"
         type="text"
         placeholder="Coffe"
         value={prompt}
@@ -38,7 +39,10 @@ const Form: FC<Props> = ({
       <div>
         {prompt.length}/{characterLimit}
       </div>
-      <button onClick={handleSubmit} disabled={isLoading || isPromptValid}>
+      <button
+      className="bg-gradient-to-r from-teal-400 
+      to-blue-500 disabled:opacity-50 w-full p-2 rounded-md text-lg"
+       onClick={handleSubmit} disabled={isLoading || isPromptValid}>
         Submit
       </button>
       {resultsElement}

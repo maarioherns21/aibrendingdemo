@@ -60,10 +60,20 @@ const CopyKatt: FC = () => {
 
   return (
     <>
-      <div>
-        <h1>Coppy Katt</h1>
-        {displayElement}
+     <div className="h-screen flex">
+      <div className="max-w-md m-auto p-2">
+        <div className="bg-slate-800 p-6 rounded-md text-white">
+          <div className="text-center my-6">
+            <h1 className=" text-3xl font-light">
+              CopyKitt
+            </h1>
+            <div>Your AI branding assistant</div>
+          </div>
+
+          {displayElement}
+        </div>
       </div>
+    </div>
     </>
   );
 };
