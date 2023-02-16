@@ -28,7 +28,7 @@ const Form: FC<Props> = ({
 
   return (
     <div className="mb-6 text-slate-400">
-      <p className="pb-2">Whats your brand idea i will genereate ideas</p>
+      <p className="pb-2">Whats your brand i will genereate ideas</p>
       <input
       className="p-2 w-full rounded-md focus:outline-teal-400 focus:outline text-slate-700"
         type="text"
