@@ -28,7 +28,7 @@ const Form: FC<Props> = ({
 
   return (
     <div className="mb-6 text-slate-400">
-      <p>tell me what your bran is aboutt and i will genereate a copy</p>
+      <p className="pb-2">Whats your brand idea i will genereate ideas</p>
       <input
       className="p-2 w-full rounded-md focus:outline-teal-400 focus:outline text-slate-700"
         type="text"
@@ -36,7 +36,7 @@ const Form: FC<Props> = ({
         value={prompt}
         onChange={(e) => updatePromptValue(e.target.value)}
       ></input>
-      <div>
+      <div className="p-2">
         {prompt.length}/{characterLimit}
       </div>
       <button
